@@ -1,6 +1,135 @@
-// Import partials here
+//Import partials here
 @import 'base.normalize';
 @import 'settings.variables';
 @import 'settings.responsive';
 @import 'components.content';
 
+
+
+//Format Border
+.main{
+  margin: 5rem;
+  border-style: solid;
+  border-color: $gray;
+  border-width: 3rem;
+  display: grid;
+  @include media-query('mobile'){
+      display: block;
+      text-align: center;
+      border: none;
+      margin: 0;
+    }
+  @include media-query('ipad'){
+    display: block;
+    margin: 0;
+    border: none;
+    text-align: center;
+  }
+}
+
+
+//Format Headshot Photo
+.info_headshot{
+  border-radius: 50%;
+  width: 85%;
+}
+
+//Format Employee Card
+.card{
+  &_profile{
+    grid-column: 1/2;
+    grid-row: 1/1;
+  }
+  &_info{
+    grid-column: 2/2;
+    grid-row: 1/1;
+    margin-top: 1rem;
+    padding-left: 2rem;
+    background: $lightgray;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 35rem;
+    @include media-query('mobile'){
+        background: none;
+        padding: 0;
+        width: auto;
+      }
+    @include media-query('ipad'){
+      background: none;
+      padding: 0;
+      width: auto;
+    }
+  }
+}
+
+//Format Employee Name and Title
+.info{
+  &_name{
+    color: $darkgray;
+    margin-left: 2rem;
+    margin-bottom: 0;
+    @include media-query('mobile'){
+        margin: 0;
+      }
+  }
+  &_title{
+    color: $darkgray;
+    margin-left: 2rem;
+    margin-top: 0.25rem;
+    font-weight: normal;
+    @include media-query('mobile'){
+        font-size: 1rem;
+        margin: 0;
+      }
+  }
+}
+
+//Format Card Info
+.card{
+  &_company{
+    color: $darkgray;
+    font-size: $size;
+  }
+  &_experience{
+    color: $darkgray;
+    font-size: $size;
+  }
+  &_school{
+    color: $darkgray;
+    font-size: $size;
+  }
+  &_major{
+    color: $darkgray;
+    font-size: $size;
+  }
+  &_email{
+    color: $darkgray;
+    font-size: $size;
+  }
+  &_linkedin{
+    float: right;
+    margin-right: 16rem;
+    font-size: $size;
+    color: $darkgray;
+    @include media-query('mobile'){
+        margin: auto;
+        float: none;
+      }
+    @include media-query('ipad'){
+      margin: auto;
+      float: none;
+    }
+  }
+}
+
+.linkedin{
+  width: 8%;
+  margin-top: 1rem;
+
+  @include media-query('mobile'){
+      width: auto;
+    }
+  @include media-query('ipad'){
+    width: auto;
+  }
+}
