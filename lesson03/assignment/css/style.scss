@@ -7,7 +7,7 @@
 
 //Format Border
 .main{
-  margin: 5rem;
+  margin: 3rem;
   border-style: solid;
   border-color: $gray;
   border-width: 3rem;
@@ -47,7 +47,7 @@
     background: $lightgray;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    width: 35rem;
+    width: 38rem;
     @include media-query('mobile'){
         background: none;
         padding: 0;
@@ -107,7 +107,7 @@
   }
   &_linkedin{
     float: right;
-    margin-right: 16rem;
+    margin-right: 18rem;
     font-size: $size;
     color: $darkgray;
     @include media-query('mobile'){
