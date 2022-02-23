@@ -1,0 +1,46 @@
+//Import Files
+@import 'settings.variables';
+@import 'settings.responsive';
+@import 'settings.transitions';
+
+
+//Format Footer
+footer{
+  background-color: $blue;
+}
+
+//Format About, Blog, and Contact Icons in Footer
+.container{
+  text-align: center;
+}
+
+.icon, .icons{
+  color: $white;
+}
+
+//Create the Transformation when hovering over footer items
+.icon:hover {
+  transform: scale(2) skewY(5deg);
+  color: $gray;
+}
+
+.icons:hover{
+  transform: scale(2) skewY(-10deg);
+  color: $gray;
+}
+
+//Create the Transition Criteria for each portion of the Footer using Mixin
+.icon1{
+  @include transition(all 500ms);
+  @include transition-timing-function(ease-in-out);
+}
+
+.icon2{
+  @include transition-property(all);
+  @include transition-duration(1s);
+  @include transition-timing-function(ease-in-out);
+}
+
+.icon3{
+  @include transition(all 5s ease-in-out);
+}
