@@ -29,9 +29,9 @@ footer{
   color: $gray;
 }
 
-//Create the Transition Criteria for each portion of the Footer using Mixin
+//Create the Transition Criteria for each portion of the Footer using Mixins
 .icon1{
-  @include transition(all 500ms);
+  @include transition(all 1s);
   @include transition-timing-function(ease-in-out);
 }
 
@@ -42,5 +42,5 @@ footer{
 }
 
 .icon3{
-  @include transition(all 5s ease-in-out);
+  @include transition(all 1s ease-in-out);
 }
