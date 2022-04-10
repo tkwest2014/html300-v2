@@ -1,4 +1,6 @@
 <template>
+
+<!-- Create Accordion using V-For and an Objects -->
 <div id="app">
   <div class="accordions">
     <dl v-for="item in items" :key="item.id">
@@ -13,6 +15,8 @@
 
 
 <script>
+
+//Create Objects for Accordion
   export default{
     name: 'app',
     data(){

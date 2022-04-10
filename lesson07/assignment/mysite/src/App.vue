@@ -1,9 +1,11 @@
 
 <template>
-  <div id="app">
-    <b-navbar toggleable="lg" type="dark" variant="secondary">
 
-    <!-- Right aligned nav items -->
+  <div id="app">
+    <h1>Traveling Tom</h1>
+
+    <!-- Create NavBar For Site -->
+    <b-navbar toggleable="lg" type="dark" variant="secondary">
     <b-navbar-nav class="ml-auto">
       <b-nav-item-dropdown text="Menu">
         <b-dropdown-item><router-link to="/" class="dropdown">Home</router-link></b-dropdown-item>
@@ -36,18 +38,17 @@
 </template>
 
 <script>
-//import HelloWorld from './components/HelloWorld.vue'
-//import Home from './components/Home.vue'
 
+//Default Code that came with Assignment
 export default {
   name: 'App',
   components: {
-    //Home
   }
 }
 </script>
 
 <style>
+/*Default Code that came with Assignment*/
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -57,6 +58,7 @@ export default {
   margin-top: 60px;
 }
 
+/*Style NavBar*/
 .routerlink{
   color: rgb(255, 255, 255)
 }

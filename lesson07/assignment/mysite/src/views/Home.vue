@@ -1,8 +1,7 @@
 <template>
 
-
+<!-- Create Content for Home Page -->
 <b-container class="bv-example-row">
-  <h1>Traveling Tom</h1>
   <b-row>
     <b-col cols="3">
       <h3 class="text-center mb-4">Blog Updates</h3>
