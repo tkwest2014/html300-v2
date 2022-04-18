@@ -12,7 +12,7 @@ import clickMixin from '../views/mixin.vue';
 
   export default{
     name: "post",
-    props: ['post'],
+    props: {post: Array},
     mixins: [clickMixin]
       }
 
